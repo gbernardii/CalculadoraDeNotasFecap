@@ -1,0 +1,63 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace ConsoleApp1
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double projeto;
+            double n1algoritmos;
+            double poAlgoritmos;
+
+            Console.WriteLine("Quanto você tirou no projeto?");
+            projeto = double.Parse(Console.ReadLine());
+            Console.WriteLine("Quanto você tirou na n1 de algoritmos?");
+            n1algoritmos = double.Parse(Console.ReadLine());
+
+            poAlgoritmos = (6 - ((n1algoritmos * 0.2) + (projeto * 0.3))) * 2;
+
+
+            double n1calculo;
+            double poCalculo;
+
+            Console.WriteLine("Quanto você tirou na n1 de cálculo?");
+            n1calculo = double.Parse(Console.ReadLine());
+
+            poCalculo = (6 - ((n1calculo * 0.2) + (projeto * 0.3))) * 2;
+
+
+            double n1etica;
+            double poEtica;
+
+            Console.WriteLine("Quando você tirou na n1 de ética?");
+            n1etica = double.Parse(Console.ReadLine());
+
+            poEtica = (6 - ((n1etica * 0.2) + (projeto * 0.3))) * 2;
+
+
+            double n1Projetointer;
+            double poProjetoInter;
+
+            Console.WriteLine("Quando você tirou na n1 da matéria Projeto Interdisciplinar?");
+            n1Projetointer = double.Parse(Console.ReadLine());
+
+            poProjetoInter = (6 - ((n1Projetointer * 0.2) + (projeto * 0.3))) * 2;
+
+
+            double n1Jogos;
+            double poJogos;
+
+            Console.WriteLine("Quanto você tirou em jogos?");
+            n1Jogos = double.Parse(Console.ReadLine());
+
+            poJogos = (6 - ((n1Jogos * 0.2) + (projeto * 0.3))) * 2;
+
+            Console.WriteLine("Você precisa tirar " + poEtica + " em ética, " + poAlgoritmos + " em algoritmos, " + poCalculo + " em cálculo, " + poProjetoInter + " no projeto inter, e " + poJogos + " em jogos.");
+        }
+    }
+}
